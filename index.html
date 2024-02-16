@@ -19,7 +19,8 @@
       class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center"
     >
       <!--home section-->
-      <section id="home-screen"
+      <section
+        id="home-screen"
         class="home min-h-screen text-white flex flex-col items-center justify-center"
       >
         <div class="flex flex-col items-center gap-10">
@@ -27,7 +28,9 @@
             Alpha Clash Pro
           </h1>
           <p class="text-xl">Unleash Your keyboard Kun g Fu</p>
-          <button id="play-btn" class="btn bg-white text-black">Play Now</button>
+          <button id="" class="btn play-btn bg-white text-black">
+            Play Now
+          </button>
         </div>
       </section>
       <!--playground container-->
@@ -44,23 +47,28 @@
                 </p>
               </div>
               <div class="flex justify-center items-center h-full">
-                <p id="current-alphabet"class="uppercase  text-9xl font-extrabold">Y</p>
+                <p
+                  id="current-alphabet"
+                  class="uppercase text-9xl font-extrabold"
+                >
+                  Y
+                </p>
               </div>
             </div>
           </div>
           <!--keyboard start-->
           <div>
             <div class="flex justify-center gap-1 my-1 w-full">
-              <kbd id="q"class="kbd">q</kbd>
-              <kbd id="w"class="kbd">w</kbd>
-              <kbd id="e"class="kbd">e</kbd>
-              <kbd id="r"class="kbd">r</kbd>
-              <kbd id="t"class="kbd">t</kbd>
-              <kbd id="y"class="kbd">y</kbd>
-              <kbd id="u"class="kbd">u</kbd>
-              <kbd id="i"class="kbd">i</kbd>
-              <kbd id="o"class="kbd">o</kbd>
-              <kbd id="p"class="kbd">p</kbd>
+              <kbd id="q" class="kbd">q</kbd>
+              <kbd id="w" class="kbd">w</kbd>
+              <kbd id="e" class="kbd">e</kbd>
+              <kbd id="r" class="kbd">r</kbd>
+              <kbd id="t" class="kbd">t</kbd>
+              <kbd id="y" class="kbd">y</kbd>
+              <kbd id="u" class="kbd">u</kbd>
+              <kbd id="i" class="kbd">i</kbd>
+              <kbd id="o" class="kbd">o</kbd>
+              <kbd id="p" class="kbd">p</kbd>
             </div>
             <div class="flex justify-center gap-1 my-1 w-full">
               <kbd id="a" class="kbd">a</kbd>
@@ -93,7 +101,7 @@
             >
               Life
               <img src="./images/heart-svgrepo-com.svg" alt="" />
-              <span>1</span>
+              <span id="current-life">5</span>
             </button>
             <!--display score-->
             <button
@@ -108,16 +116,18 @@
       </section>
       <!--final scored start-->
       <section
+        id="final-score"
         class="score flex justify-center items-center min-h-screen hidden"
       >
         <div
           class="text-white text-center space-y-6 bg-[#FFFFFF33] p-6 rounded-xl"
         >
+          <h4 class="font-extrabold text-2xl">❌Game Over❌</h4>
           <h1 class="text-8xl">
             <span class="font-extrabold">Score:</span>
-            <span>14</span>
+            <span id="your-score">0</span>
           </h1>
-          <button class="btn">Play Again</button>
+          <button id="" class="btn play-btn">Play Again</button>
           <p>Practice makes perfect</p>
         </div>
       </section>
